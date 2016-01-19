@@ -91,7 +91,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             JSONObject jsonResponse = new JSONObject(response).getJSONObject("form");
                             String site = jsonResponse.getString("site"),
                                     network = jsonResponse.getString("network");
-                            System.out.println("Site: "+site+"\nNetwork: "+network);
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
